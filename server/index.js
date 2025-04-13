@@ -28,7 +28,7 @@ mongoose.connect(process.env.MONGODB_URI)
 app.use('/auth', authRoutes);
 app.use('/links', linkRoutes);
 
-const PORT = process.env.PORT || "https://url-shortenerbackend.vercel.app";
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
